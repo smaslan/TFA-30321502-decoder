@@ -23,4 +23,4 @@ Reverse engineered sensor packet, 36 bits, bits(36:1):
 ```
 
 ## License
-Project is distributed under [MIT license](./LICENSE.txt).
+Project is distributed under [MIT license](./LICENSE).
