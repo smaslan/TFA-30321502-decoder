@@ -13,14 +13,14 @@ Every transmission of sensor consist of 7 repetitions of the same packet. Data e
 <img src="./foto/packet_x1.png">
 
 Reverse engineered sensor packet (36 bits, bits(36:1)):
-,,,
+```
  > bits(8:1)   = sensor type ID?   
  > bits(9)     = battery ok flag (1=good, 0=low)
  > bits(14:10) = random ID (generated when battery replaced)?
  > bits(16:15) = channel ID as set on switch (0=chn1, 1=chn2, ...)
  > bits(28:17) = 2's complement temperature [10*deg C] (237=23.7degC)
  > bits(36:29) = relative humidity [%]
-,,,
+```
 
 ## License
 Project is distributed under [MIT license](./LICENSE.txt).
