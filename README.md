@@ -24,7 +24,7 @@ Reverse engineered sensor packet, 36 bits, bits(36:1):
 ```
 
 ## Example 8-bit AVR receiver
-Octave script was meant just for debug purposes. After understanging the format I decided to make a simple receiver using small microcontroller. Table sediments revealed breadboard with working ATmega644, so based the decoder on this 8-bit AVR but it will run on any AVR capable to run at some 8 MHz. It decodes the packets and results can be read via UART using SCPI style commands or eventually it can report all packets by itself (talk mode). More details can be found in the source code.
+Octave script was meant just for debug purposes. After understanding the format I decided to make a simple receiver using small microcontroller. Table sediments revealed breadboard with working ATmega644, so based the decoder on this 8-bit AVR but it will run on any AVR capable to run at some 8 MHz. It decodes the packets and results can be read via UART using SCPI style commands or eventually it can report all packets by itself (talk mode). More details can be found in the source code.
 
 <img src="./foto/AVR_TFA_receiver_v1.png">
 
