@@ -11,13 +11,14 @@
 % There is no CRC. It can be replaced by comparing the 7 repetitions 
 % and selecting most common packet data.
 %
-% Reverse engineered sensor packet (36 bits):
-%   bits [8:1]   = sensor type ID?   
-%   bits [9]     = battery ok flag (1=good, 0=low)
-%   bits [14:10] = random ID (generated when battery replaced)?
-%   bits [16:15] = channel ID as set on switch (0=chn1, 1=chn2, ...)
-%   bits [28:17] = 2's complement temperature [10*deg C] (237=23.7degC)
-%   bits [36:29] = relative humidity [%]
+% Reverse engineered sensor packet (36 bits, bits(36:1)):
+%   bits(8:1)   = sensor type ID (0x90)?   
+%   bits(12:9)  = random ID (generated when battery replaced)?
+%   bits(13)    = battery low flag (1=low, 0=good)
+%   bits(14)    = sync button pressed (1=sync report, 0=self reporting)
+%   bits(16:15) = channel ID as set on switch (0=chn1, 1=chn2, ...)
+%   bits(28:17) = 2's complement temperature [10*deg C] (237=23.7degC)
+%   bits(36:29) = relative humidity [%]
 %
 % (c) 2023 Stanislav Maslan, s.maslan@seznam.cz.
 % The script is distributed under MIT license, https://opensource.org/licenses/MIT. 

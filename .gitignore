@@ -1,0 +1,4 @@
+AVR/avr-tfa-rx-test/.vs
+AVR/avr-tfa-rx-test/debug
+AVR/avr-tfa-rx-test/release/*
+!AVR/avr-tfa-rx-test/release/*.hex
